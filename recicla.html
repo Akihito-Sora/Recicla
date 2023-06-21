@@ -1,0 +1,46 @@
+<!-- Henrique Toshio Fatori ra:2312867 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recicla</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="recicla.css">
+</head>
+<body>
+    <header> 
+        <h1> Recicla <div class="espaco"><img src="imagens/icon.png" width="40px"></div></h1> 
+    </header>
+    <div class="container">    
+        <h2> Cadastrar dica de Reciclagem </h2>
+        
+        <div class="cadastro">
+            <div class="inputers">
+                <label>Material:</label>
+                <select name="inputMaterial" id="inputMaterial" required>
+                    <option value="Plástico">Plástico</option>
+                    <option value="Vidro">Vidro</option>
+                    <option value="Papel">Papel</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Orgânico">Orgânico</option>
+                </select>
+            </div>
+            <div class ="inputers">
+                <label>Dica:</label>
+                <input type="text" id="inputDica" required>
+            </div>
+            <input class="botao" type="submit" value="Cadastrar" onclick="cadastrar()">
+        </div>
+
+        <div id ='mostra'></div>
+
+        <button class ="botao inputers" id ="btnfiltrar" onclick="btn(this)"> Mostrar filtro <!--<img id="f" src="imagens/mostrar.png" width="35px">--> </button>
+        <div id ='filtrar'></div>
+        
+        <button class="botao inputers" id ="btnhorario" onclick="btn(this)"> Mostrar Horarios de coleta <!--<img id ="h" src="imagens/mostrar.png" width="35px">--></button>
+        <div id = "horario"></div>
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
